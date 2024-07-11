@@ -19,7 +19,7 @@ import Delivery from './components/Delivey';
         <Routes>
         
           <Route path="/ship" element={<AllShipping/>}/>
-          <Route path="/add" element={<Cart/>}/>
+          <Route exact path="/add" element={<Cart/>}/>
           <Route path='/cart' element={<AllCart/>}/>
           <Route path='/order' element={<PlaceOrder/>}/>
           <Route path='/pay' element={<Payment/>}/>
