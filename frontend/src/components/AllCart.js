@@ -11,7 +11,7 @@ const AllCart = () => {
   const navigate = useNavigate();
 
   function getItem() {
-    axios.get("http://localhost:5000/cart/").then((res) => {
+    axios.get("https://orderapp-res-backend.vercel.app/cart/").then((res) => {
       console.log(res.data);
       setData(res.data);
       setTotal(
@@ -23,7 +23,7 @@ const AllCart = () => {
   }
 
   function deleteItem(id) {
-    axios.delete(`http://localhost:5000/cart/${id}`).then((res) => {
+    axios.delete(`https://orderapp-res-backend.vercel.app/cart/${id}`).then((res) => {
       getItem();
     });
   }
