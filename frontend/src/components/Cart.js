@@ -11,7 +11,7 @@ const Cart = () => {
 
   const AddCart = async () => {
     try {
-      const response = await axios.post(`http://localhost:5000/cart/add`, {
+      const response = await axios.post(`https://orderapp-res-backend.vercel.app/cart/add`, {
         name,
         price,
         quantity,
