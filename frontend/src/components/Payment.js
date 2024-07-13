@@ -90,7 +90,7 @@ const Payment = () =>{
     .catch(error => {
       console.error('Purchase Unsuccessful', error);
       alert("Purchase Unsuccessful");
-      Navigate('/del');
+      Navigate('/add');
     });
   }
 
