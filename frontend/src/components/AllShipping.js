@@ -14,7 +14,7 @@ const AllShipping = () => {
   }, []);
 
   function getItem() {
-    axios.get("http://localhost:5000/check/").then((res) => {
+    axios.get("https://orderapp-res-backend.vercel.app/check/").then((res) => {
       console.log(res.data);
       setData(res.data);
     });
