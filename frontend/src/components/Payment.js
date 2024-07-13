@@ -82,7 +82,7 @@ const Payment = () =>{
       shippingData,
     };
 
-    axios.post('http://localhost:5000/check/add', data)
+    axios.post('https://orderapp-res-backend.vercel.app/check/add', data)
     .then(response => {
       localStorage.setItem('shippingData', JSON.stringify(data));
       alert("Purchase Successful");
