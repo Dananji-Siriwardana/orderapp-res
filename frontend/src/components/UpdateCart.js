@@ -29,7 +29,7 @@ useEffect(()=> {
 const handleUpdate=(e)=>{
     e.preventDefault();
    console.log("id....",id);
-  axios.post(`http://localhost:5000/cart/update/${id}`,
+  axios.post(`https://orderapp-res-backend.vercel.app/cart/update/${id}`,
     {
         name:name,
         price:price,
